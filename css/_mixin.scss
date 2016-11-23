@@ -1,0 +1,13 @@
+@mixin star-center($padding-sides:15px, $padding-tops:25px){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: $padding-sides $padding-tops;
+}
+
+@mixin esfera-center($position-left:50%, $position-top:50%){
+    position:absolute;
+    top:$position-top;
+    left:$position-left;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,76 @@
+@import "_variables";
+@import "_esfera";
+@import "_mixin";
+
+* {
+	box-sizing : border-box;
+}
+
+.container {
+	background: white;
+	.esfera{
+		background: $color-esfera;
+		border-radius: $base-tamanio-esfera/2;
+		height: $base-tamanio-esfera;
+		width: $base-tamanio-esfera;
+		padding: $base-tamanio-esfera/6;
+	}
+
+	.estrella-1{
+		@include star(30px);
+		@include esfera(,)
+	}
+
+	.estrella-2{
+		@include star(20px);
+		@include star-center(30px,5px);
+		@include esfera(,)
+	}
+
+	.estrella-3{
+		@include star(15px);
+		@include star-center(30px,10px);
+		@include esfera(,)
+	}
+
+	.estrella-4{
+		@include star(15px);
+		@include star-center(30px,10px);
+		@include esfera(,)
+	}
+
+	.estrella-5{
+		@include star(10px);
+		@include star-center(30px,20px);
+		@include esfera(,)
+	}
+
+	.estrella-6{
+		@include star(10px);
+		@include star-center(30px,20px);
+		@include esfera(,)
+	}
+
+	.estrella-7{
+		@include star(7px);
+		@include star-center(30px,20px);
+		@include esfera(,)
+	}
+	
+	.brillo{
+	   animation:shine 1.4s infinite linear;
+	   -webkit-animation:shine 1.4s infinite linear;
+	}
+	@keyframes shine {
+	   0%{ box-shadow:0 0 26px #f2e602 ,0 0 14px #f2e602 , 0 0 6px #f2e602 , 0 0 2px #f2e602 ; }
+	   50%{ box-shadow:0 0 6px #f2e602 ,0 0 4px #f2e602 , 0 0 6px #f2e602 , 0 0 2px #f2e602 , inset 0 0 8px rgba(255, 247, 0, 1.0); }
+	   100%{ box-shadow:0 0 26px #f2e602 ,0 0 14px #f2e602 , 0 0 6px #f2e602 , 0 0 2px #f2e602 ; }
+	}
+	@-webkit-keyframes shine {
+	   0%{ box-shadow:0 0 6px #f2e602 ,0 0 4px #f2e602 , 0 0 6px #f2e602 , 0 0 2px #f2e602 ; }
+	   50%{box-shadow:0 0 26px #f2e602 ,0 0 14px #f2e602 , 0 0 6px #f2e602 , 0 0 2px #f2e602 , inset 0 0 8px rgba(255, 247, 0, 1.0); }
+	   100%{ box-shadow:0 0 6px #f2e602 ,0 0 4px #f2e602 , 0 0 6px #f2e602 , 0 0 2px #f2e602 ; }
+	}
+}
+
+
