@@ -6,6 +6,12 @@
 	box-sizing : border-box;
 }
 
+.dragon{
+	background:url(shenglong.gif);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
 .container {
 	background: white;
 	.esfera{
@@ -18,43 +24,43 @@
 
 	.estrella-1{
 		@include star(30px);
-		@include esfera(,)
+		@include esfera-center(49%,16%);
 	}
 
 	.estrella-2{
 		@include star(20px);
 		@include star-center(30px,5px);
-		@include esfera(,)
+		@include esfera-center(58%,21%);
 	}
 
 	.estrella-3{
 		@include star(15px);
 		@include star-center(30px,10px);
-		@include esfera(,)
+		@include esfera-center(63%,38%);
 	}
 
 	.estrella-4{
 		@include star(15px);
 		@include star-center(30px,10px);
-		@include esfera(,)
+		@include esfera-center(59%,56%);
 	}
 
 	.estrella-5{
 		@include star(10px);
 		@include star-center(30px,20px);
-		@include esfera(,)
+		@include esfera-center (49%,63%);
 	}
 
 	.estrella-6{
 		@include star(10px);
 		@include star-center(30px,20px);
-		@include esfera(,)
+		@include esfera-center(41%,49%);
 	}
 
 	.estrella-7{
 		@include star(7px);
 		@include star-center(30px,20px);
-		@include esfera(,)
+		@include esfera-center(41%,29% );
 	}
 	
 	.brillo{
